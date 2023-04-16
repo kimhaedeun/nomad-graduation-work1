@@ -1,0 +1,119 @@
+
+.find-screen{
+    height: 100vh;
+}
+.recommended-friends{
+    border-bottom: 1px solid var(--main-color);
+    border-top: 1px solid var(--main-color);
+    padding: 25px 0;
+    margin: 25px 0;
+}
+.recommended-friends__title{
+    font-size: 14px;
+    color:var(--gray-color);
+}
+.recommended-friends span{
+    margin: 100px 0;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    color: var(--gray-color);
+}
+
+.open-chat__header{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.open-chat__header span{
+    opacity: 0.6px;
+}
+
+.open-post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.open-post__title{
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.open-post__hashtags{
+    text-transform: uppercase;
+    opacity: 0.6;
+
+}
+.open-post__members{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.open-post__members img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.open-post__member-count{
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+.open-post__members .divider{
+    width: 2px;
+    height: 15px;
+    background-color: var(--main-color);
+    margin-left: 10px;
+
+}
+
+.open-post__member-status{
+    color: var(--main-color);
+}
+
+.open-post__photo{
+    position: relative;
+}
+.open-post__photo img{
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+}
+.open-post__heart-count{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+}
+.open-post__heart-count span{
+    margin-left: 3px;
+}
+
+@keyframes heartBeat {
+    0%{
+        color: white;
+    }
+    50%{
+        color: var(--main-color);
+        transform: scale(1.3);
+    }
+    100%{
+        color:whitess;
+    }
+}
+
+.open-post__heart-count:hover i{
+    will-change: transform;
+    animation: heartBeat 2s linear infinite;
+    cursor: pointer;
+}

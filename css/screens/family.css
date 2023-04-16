@@ -1,0 +1,59 @@
+#family-display-link{
+    text-align:center;
+    display: block;
+    padding: 15px 0px;
+    background-color: #fafafa;
+    margin-bottom: 15px;
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+#family-display-link i{
+    color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.family-screen{
+    padding: 0px var(--horizontal-space);
+}
+
+.family-screen__channel{
+    margin-top: 25px;
+    border-top: 1px solid var(--main-color);
+    padding-top: 15px;
+}
+.family-screen__channel-header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray-color);
+}
+
+@keyframes hideSplashScreen{
+    form {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#splash-screen{
+    background-color: var(--main-color);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: hideSplashScreen 0.2s ease-in-out forwards;
+    animation-delay: 1.2s;
+    flex-direction: column;
+}
+#splash-screen img{
+    width: 300px;
+    height: auto;
+
+}
