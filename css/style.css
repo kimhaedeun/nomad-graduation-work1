@@ -60,7 +60,7 @@
 
 #login-form input{
     width: 70%;
-    padding: 20px 0px;
+    padding: 15px 0px;
     border: none;
     font-size: 18px;
     margin-bottom: 20px;
@@ -92,17 +92,17 @@
     font-size: 13px;
 }
 .welcome-main__bt_img{
-    width: 100%;
-    height: auto;
-    margin-top: -220px;
     position: fixed;
+    top: 350px;
+    width: 100%;
+    margin-top: -00px;
     z-index: -1;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.wecome-main__bt.img img{
-    width: 100%;
+.welcome-main__bt_img img{
+    width:80%;
     height: auto;
 }
